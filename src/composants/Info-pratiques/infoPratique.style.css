@@ -1,0 +1,43 @@
+.infoContainer {
+  background-color: var(--secondary-color-one);
+}
+
+.infoContainer > section {
+  min-height: fit-content;
+  background-color: var(--main-dark);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+
+.infoContainer a {
+  color: var(--white-text);
+  background-color: var(--main-xDark);
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoContainer a:hover {
+  color: var(--text-hover-accent);
+}
+
+.alertes {
+  background-image: url('./../../ressources/alertesIcon.jpg');
+}
+
+.FAQ {
+  background-image: url('./../../ressources/FAQIcon.jpg');
+}
+
+.contact {
+  background-image: url('./../../ressources/contactIcon.jpg');
+}
+
+.partenaires {
+  background-image: url('./../../ressources/partenaireIcon.jpg');
+}

@@ -1,0 +1,88 @@
+@import 'leaflet/dist/leaflet.css';
+
+/* Taille de la Map  */
+
+.leaflet-container {
+  height: 100vh;
+  width: auto;
+  z-index: 0;
+}
+
+/* Inversion des couleurs du Map */
+
+/* .leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+} */
+
+#filter:active {
+  animation: wobble 1s;
+}
+
+@keyframes wobble {
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+}
+
+/* Positionnement et personnalisation de l'icone du filtre sur la map */
+
+#filter {
+  margin: 0 15px;
+  top: 300px;
+  position: relative;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.313);
+}
+
+#filter:hover {
+  background-color: rgba(255, 255, 255, 0.842);  
+}
+
+#map-filter-container {
+  top: 30%;
+  position: absolute;
+  z-index: 2;
+  height: 0;
+}
+
+/* Personalisation des checkboxs du filtre */
+
+.input-map {
+  appearance: none;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.input-map::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background: #023047;
+}
+
+.input-map::before {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .3s ease;
+}
+
+.input-map:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.input-map:checked + label {
+  color: #023047;
+}

@@ -1,0 +1,22 @@
+
+ 
+
+  .wp-block-media-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .wp-block-media-text img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 16px;
+    
+  }
+  
+  .wp-block-media-text .wp-block-media-text__content {
+    flex:1;
+    color: var(--white-100); 
+    
+  }

@@ -1,0 +1,77 @@
+/* Btn Primary */
+    .btn-primary {
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text);
+        border-color: var(--btn-primary-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--btn-primary-bg-hover);
+        border-color: var(--btn-primary-border-hover);
+    }
+
+    /* Btn secondary */
+    .btn-secondary {
+        background-color: var(--btn-secondary-bg);
+        color: var(--btn-secondary-text);
+        border-color: var(--btn-secondary-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-secondary:hover {
+        background-color: var(--btn-secondary-bg-hover);
+        border-color: var(--btn-secondary-border-hover);
+    }
+
+    /* Btn default */
+    .btn-default {
+        background-color: var(--btn-default-bg);
+        color: var(--btn-default-text);
+        border-color: var(--btn-default-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-default:hover {
+        background-color: var(--btn-default-bg-hover);
+        border-color: var(--btn-default-border-hover);
+    }
+
+    /* Btn warning */
+    .btn-warning {
+        background-color: var(--btn-warning-bg);
+        color: var(--btn-warning-text);
+        border-color: var(--btn-warning-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-warning:hover {
+        background-color: var(--btn-warning-bg-hover);
+        border-color: var(--btn-warning-border-hover);
+    }
+
+    /* Btn danger */
+    .btn-danger {
+        background-color: var(--btn-danger-bg);
+        color: var(--btn-danger-text);
+        border-color: var(--btn-danger-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-danger:hover {
+        background-color: var(--btn-danger-bg-hover);
+        border-color: var(--btn-danger-border-hover);
+    }
+
+    /* Btn accent */
+    .btn-accent {
+        background-color: var(--btn-accent-bg);
+        color: var(--btn-accent-text);
+        border-color: var(--btn-accent-border);
+        border-radius: var(--rounded);
+    }
+
+    .btn-accent:hover {
+        background-color: var(--btn-accent-bg-hover);
+        border-color: var(--btn-accent-border-hover);
+    }

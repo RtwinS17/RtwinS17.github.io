@@ -1,0 +1,15 @@
+.cardDiscover-container {
+  background-color: var(--secondary-color-one);
+  border-color: var(--main-text);
+  border-style: solid;
+  border-width: 0.2px;
+}
+
+.cardDiscoverTitle {
+  background-color: var(--main-dark);
+}
+
+.cardDiscoverSpan {
+  color: var(--black-text);
+  border-color: var(--secondray-orange-border);
+}

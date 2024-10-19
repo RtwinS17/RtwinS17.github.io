@@ -1,0 +1,17 @@
+.navBarMob  {
+    background-color: var(--main-xDark);
+    border-radius: 3rem 0 0 3rem;
+    height: 100%;
+}
+
+.navBarMob-li {
+    color : var(--white-100); 
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 1rem 0 2rem;
+    height: 80%;
+    font-size: x-large;
+    font-weight: 500;
+}
+

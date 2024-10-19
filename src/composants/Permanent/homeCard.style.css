@@ -1,0 +1,14 @@
+.mainContent-container {
+  width: 85%;
+  height: auto;
+  background-color: var(--main-xDark);
+  box-shadow: 7px 5px 12px 3px var(--black-0);
+  
+  overflow-y: auto;
+}
+
+.card {
+  border: solid 2px;
+  border-radius: 0 2rem 2rem 0;
+  width: 100%;
+}

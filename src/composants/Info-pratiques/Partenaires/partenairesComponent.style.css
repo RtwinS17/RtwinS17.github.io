@@ -1,0 +1,12 @@
+.partenaires-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--main),
+    var(--secondary-color),
+    var(--secondary-color-one)
+  );
+}
+
+.partenaires-style {
+  background-color: var(--main-clear);
+}

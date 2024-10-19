@@ -1,0 +1,45 @@
+.discoverContainer {
+  background-color: var(--secondary-color-one);
+  color: var(--white-text);
+}
+
+.discoverContainer article {
+  background-color: var(--white-100);
+  border-color: var(--black-100);
+  border-width: 2px;
+}
+
+.discoverContainer article h2 {
+  background-color: var(--main-dark);
+  font-size: 1.5rem;
+}
+
+.discoverContainer article section {
+  border-radius: 2rem;
+  background-color: var(--main-dark);
+  height: 20rem;
+  padding: 15px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.discoverContainer article section a {
+  border-radius: 1rem;
+}
+
+.discoverContainer article .progSection a:nth-child(odd) {
+  background-color: var(--secondary-color-one);
+}
+
+.discoverContainer article .progSection a:nth-child(even) {
+  background-color: var(--main);
+}
+
+.discoverContainer article .groupsSection a {
+  background-color: var(--white-100);
+}
+
+.groupTitle {
+  background-color: var(--main-dark);
+  border-radius: 1rem;
+}

@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    :root {
+        --rounded : 2rem;
+        /* BTN primary */
+        --btn-primary-bg: #0f415a;
+        --btn-primary-border: #0e3d55;
+        /* d5% bg */
+        --btn-primary-bg-hover: #196c95;
+        /* l17% bg */
+        --btn-primary-border-hover: #186891;
+        /* l17% border */
+
+        --btn-primary-text: #fafafa;
+
+
+        /* BTN default */
+        --btn-default-bg: #CDDBDC;
+        --btn-default-border: #bed0d1;
+        --btn-default-bg-hover: #d5e1e2;
+        --btn-default-border-hover: #c9d8d9;
+
+        --btn-default-text: #0c0c0c;
+
+        /* BTN secondary */
+        --btn-secondary-bg: #FFB703;
+        --btn-secondary-border: #f18000;
+        /* d5% bg */
+        --btn-secondary-bg-hover: #ffb803c9;
+        /* l17% bg */
+        --btn-secondary-border-hover: #ff9a28;
+        /* l17% border */
+
+        --btn-secondary-text: #0c0c0c;
+
+        /* BTN warning */
+        --btn-warning-bg: #C81414;
+        --btn-warning-border: #be1313;
+        /* d5% bg */
+        --btn-warning-bg-hover: #e92424;
+        /* l17% bg */
+        --btn-warning-border-hover: #e81c1c;
+        /* l17% border */
+
+        --btn-warning-text: #fafafa;
+
+        /* BTN danger */
+        --btn-danger-bg: #F4BD32;
+        --btn-danger-border: #f3b824;
+        /* d5% bg */
+        --btn-danger-bg-hover: #f6c855;
+        /* l17% bg */
+        --btn-danger-border-hover: #f5c449;
+        /* l17% border */
+
+        --btn-danger-text: #0c0c0c;
+
+        /* BTN accent */
+        --btn-accent-bg: #FFB703;
+        --btn-accent-border: #FFB703;
+        /* d5% bg */
+        --btn-accent-bg-hover: #ffb803bb;
+        /* l17% bg */
+        --btn-accent-border-hover: #d84965;
+        /* l17% border */
+
+        --btn-accent-text: #fafafa;
+    }
+
+    .dark-theme {
+        /* BTN primary */
+        --btn-primary-bg: #071821;
+        --btn-primary-border: #07171f;
+        /* d5% bg */
+        --btn-primary-bg-hover: #154863;
+        /* l17% bg */
+        --btn-primary-border-hover: #154863;
+        /* l17% border */
+
+        --btn-primary-text: #CECABA;
+
+
+        /* BTN default */
+        --btn-default-bg: #3c3c3c;
+        --btn-default-border: #393939;
+        --btn-default-bg-hover: #5d5d5d;
+        --btn-default-border-hover: #5b5b5b;
+
+        --btn-default-text: #CECABA;
+
+        /* BTN secondary */
+        --btn-secondary-bg: #704718;
+        --btn-secondary-border: #6a4317;
+        /* d5% bg */
+        --btn-secondary-bg-hover: #a46823;
+        /* l17% bg */
+        --btn-secondary-border-hover: #9f6523;
+        /* l17% border */
+
+        --btn-secondary-text: #CECABA;
+
+        /* BTN warning */
+        --btn-warning-bg: #670f0f;
+        --btn-warning-border: #620e0e;
+        /* d5% bg */
+        --btn-warning-bg-hover: #a11717;
+        /* l17% bg */
+        --btn-warning-border-hover: #9d1616;
+        /* l17% border */
+
+        --btn-warning-text: #CECABA;
+
+        /* BTN danger */
+        --btn-danger-bg: #785601;
+        --btn-danger-border: #725201;
+        /* d5% bg */
+        --btn-danger-bg-hover: #ba8502;
+        /* l17% bg */
+        --btn-danger-border-hover: #b58202;
+        /* l17% border */
+
+        --btn-danger-text: #CECABA;
+
+        /* BTN accent */
+        --btn-accent-bg: #800d24;
+        --btn-accent-border: #7a0c22;
+        /* d5% bg */
+        --btn-accent-bg-hover: #b91334;
+        /* l17% bg */
+        --btn-accent-border-hover: #b41232;
+        /* l17% border */
+
+        --btn-accent-text: #CECABA;
+    }

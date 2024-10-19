@@ -1,0 +1,35 @@
+.register-container {
+  max-width: 450px;
+  background-color: var(--secondary-color-one);
+  border-radius: 2rem;
+}
+
+input {
+  margin-top: 0.3rem;
+  border-color: var(--secondary-color-one-border);
+  border: solid 3px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2rem;
+  color: var(--main-text);
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(
+      315deg,
+      var(--secondary-color-one-border),
+      var(--secondary-color-border)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: bg-hue 5s linear infinite;
+}
+
+/* @keyframes for the gradient animation */
+@keyframes bg-hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,0 +1,14 @@
+.programmeTitle {
+    background-color: var(--main-dark);
+    color: var(--secondary-text);
+    border-style: solid;
+    border-color: var(--main-border);
+    border-width: 0.4px;
+}
+
+.adminConcertContainer {
+    background-color: var(--white-0);
+    border-style: solid;
+    border-color: var(--main-border);
+    border-width: 0.4px;
+}

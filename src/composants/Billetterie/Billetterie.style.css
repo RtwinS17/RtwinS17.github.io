@@ -1,0 +1,9 @@
+.priceContainer {
+    color: var(--white-text);
+    background-color: var(--main-dark);
+}
+
+.billetterieTitle {
+    background-color: var(--main);
+    color: var(--secondary-text);
+}

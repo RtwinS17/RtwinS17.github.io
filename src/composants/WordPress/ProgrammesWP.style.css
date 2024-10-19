@@ -1,0 +1,14 @@
+.concertContainer {
+  background-color: var(--secondary-color-one);
+  border-color: var(--white-0);
+  border-style: solid;
+  border-width: 0.2px;
+}
+
+.concertTitle {
+  background-color: var(--main-dark);
+}
+
+.concertArticle {
+  color: var(--white-text);
+}

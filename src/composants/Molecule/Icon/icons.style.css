@@ -1,0 +1,63 @@
+.icon-user-logIn{
+    border-radius: 3rem;
+  }
+
+  .icon-home-navBar {
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+
+  .leftArrow-icon {
+    overflow: hidden;
+    border-radius: 3rem;
+    width: 30px;
+    animation: bounce 1s infinite ;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateX(5%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .homeLogo {
+    width: 45%;
+    height: 60%;
+  }
+
+  .fb-icon {
+    width: 30px;
+    height: 30px;
+    color : var(--white-100);
+  }
+
+  .x-icon {
+    width: 30px;
+    height: 30px;
+    color : var(--white-100);
+  }
+
+  .inst-icon {
+    width: 30px;
+    height: 30px;
+    color : var(--white-100);
+  }
+
+  .xclose-icon {
+    width: 40px;
+    height: 40px;
+    color : var(--white-100);
+  } 
+
+  
+  .homeLogo-container {
+    min-width: 40%;
+    max-width: 40%;
+    min-height: 100%;
+    max-height: 100%;
+  }

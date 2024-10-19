@@ -1,0 +1,7 @@
+.editConcertForm label {
+    color: var(--secondary-text)
+}
+
+.editConcertForm label input, textarea, select {
+    color: var(--black-text)
+}
