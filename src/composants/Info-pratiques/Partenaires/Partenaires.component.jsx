@@ -16,7 +16,7 @@ const Partenaires = () => {
         const imagePromises = data.map(partenaire => {
           const imageId = partenaire.acf.logo;
           if (imageId) {
-            return fetch(`http://nationsounds.online/wp-json/wp/v2/media/${imageId}`)
+            return fetch(`https://nationsounds.online/wp-json/wp/v2/media/${imageId}`)
               .then(response => response.json())
               .then(imageData => ({
                 id: partenaire.id,

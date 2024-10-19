@@ -20,7 +20,7 @@ const Concerts = () => {
         sortedConcerts.forEach(concert => {
           const imageId = concert.acf.photo;
           if (imageId) {
-            fetch(`http://nationsounds.online/wp-json/wp/v2/media/${imageId}`)
+            fetch(`https://nationsounds.online/wp-json/wp/v2/media/${imageId}`)
               .then(response => response.json())
               .then(imageData => {
                 setImages(prevImages => ({
