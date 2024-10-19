@@ -12,7 +12,7 @@ const Map = () => {
   const mapZoom = 14;
 
   // const lightTileLayer = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
-  const darkTileLayer = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
+  const darkTileLayer = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=8251f78c-723d-42a3-97cb-eef6516cb229';
 
   const [showScene, setShowScene] = useState(true);
   const [showRestauration, setShowRestauration] = useState(true);
@@ -35,7 +35,8 @@ const Map = () => {
           <TileLayer
             TileLayer
             url={darkTileLayer}
-            attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
+
           />
           <MarkerClusterGroup
             chunkedLoading>
