@@ -10,7 +10,7 @@ const faqQuestions = [
     title:
       "Quelles sont les restrictions liées à l'âge en terme d'accès au festival ?",
     content:
-      "L'accès au festival est interdit aux mineurs de moins de 8 ans, même accompagnés, notamment pour cause de volume sonore élevé et de matériel inadapté aux petits. Les mineurs de moins de 16 ans doivent être accompagnés d'une personne majeure et munis d'une autorisation parentale. L’accès à la zone camping est interdite aux mineurs de moins de 12 ans. Le festival est gratuit pour les enfants jusqu’à 10 ans.",
+      "L'accès au festival est interdit aux mineurs de moins de 8 ans. Les mineurs de moins de 16 ans doivent être accompagnés d'une personne majeure et munis d'une autorisation parentale. L’accès à la zone camping est interdite aux mineurs de moins de 12 ans. Le festival est gratuit pour les enfants jusqu’à 10 ans.",
   },
   {
     id: 'q3',
@@ -37,6 +37,10 @@ const faqQuestions = [
     content:
       'Il n’y a pas de bénévoles au Festival Nation Sounds. Nous rémunérons l’ensemble de nos équipes. Pour candidater, veuillez nous contacter via le formulaire de contact de notre site.',
   },
+
+  {id: 'q7', 
+   title: 'Quels sont les moyens de paiement acceptés dans les diffèrents points de restauration ?', 
+   content: "Afin d'éviter au maximum les pertes et les vols, toutes les transactions se feront via un système de bracelet cashless que vous pourrez recharger via des bornes présentes dans tout le festival.."},
 ];
 
 export default faqQuestions;
