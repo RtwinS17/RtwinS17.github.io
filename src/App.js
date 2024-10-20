@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';  // Utiliser HashRouter pour GitHub Pages
 import { MainContent } from './composants/Permanent/homeCard.component';
 import { ThemeBtn } from './composants/Molecule/Button/themeChanger.btn';
 import Diaporamahome from './composants/Permanent/diaporamaHome';
@@ -23,21 +23,19 @@ import ConditionsPage from './composants/WordPress/CondGenWP';
 import DetailsArtistesWP from './composants/WordPress/DetailArtistesWP';
 import Concerts from './composants/WordPress/ProgrammesWP';
 
-
-
-
-
 const App = () => {
 
-  let [screenWidth, setScreenWidth] = useState(window.innerWidth)
-  let [deviceUsed, setDeviceUSed] = useState('mobile')
+  let [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  let [deviceUsed, setDeviceUSed] = useState('mobile');
+
   function updateScreenWidth() {
-    setScreenWidth(window.innerWidth)
+    setScreenWidth(window.innerWidth);
   }
+
   useEffect(() => {
-    window.addEventListener('resize', updateScreenWidth)
-    screenWidth >= 640 ? setDeviceUSed('desktop') : setDeviceUSed('mobile')
-  }, [screenWidth])
+    window.addEventListener('resize', updateScreenWidth);
+    screenWidth >= 640 ? setDeviceUSed('desktop') : setDeviceUSed('mobile');
+  }, [screenWidth]);
 
   return (
     <>
@@ -47,36 +45,29 @@ const App = () => {
           <HomeLogo />
           {deviceUsed === 'mobile' ? <NavBarMobile /> : <NavBarDesktop />}
           <MainContent>
-
             <Routes>
-              <Route path='/*' element={<Page404 />} />
-              <Route path="/" element={
-
-                <HomeContent />
-
-              } />
-              <Route path='/discover' element={<Concerts />} />
-              <Route path='/discover/artists' element={<DetailsArtistesWP />} />
-              <Route path='infos-pratiques' element={<InfoPratiques deviceUsed={deviceUsed} />} />
-              <Route path='FAQ' element={<FaqComponent />} />
-              <Route path='alertes' element={<Alertes />} />
-              <Route path='contact' element={<Contact />} />
-              <Route path='partenaires' element={<PartenairesComponent />} />
-              <Route path='map' element={<Map />} />
-              <Route path='billetterie' element={<Billetterie />} />
-              <Route path='admin/programmation' element={<AdminProgrammation />} />
-              <Route path='admin/create_concert' element={<CreateConcert />} />
-              <Route path='admin/edit_concert' element={<EditConcert />} />
-              <Route path='conditions' element={<ConditionsPage />} />
-              <Route path='/discover/programmation' element={<Concerts />} />
-
+              <Route path="/*" element={<Page404 />} />
+              <Route path="/" element={<HomeContent />} />
+              <Route path="/discover" element={<Concerts />} />
+              <Route path="/discover/artists" element={<DetailsArtistesWP />} />
+              <Route path="/infos-pratiques" element={<InfoPratiques deviceUsed={deviceUsed} />} />
+              <Route path="/FAQ" element={<FaqComponent />} />
+              <Route path="/alertes" element={<Alertes />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/partenaires" element={<PartenairesComponent />} />
+              <Route path="/map" element={<Map />} />
+              <Route path="/billetterie" element={<Billetterie />} />
+              <Route path="/admin/programmation" element={<AdminProgrammation />} />
+              <Route path="/admin/create_concert" element={<CreateConcert />} />
+              <Route path="/admin/edit_concert" element={<EditConcert />} />
+              <Route path="/conditions" element={<ConditionsPage />} />
+              <Route path="/discover/programmation" element={<Concerts />} />
             </Routes>
           </MainContent>
-          
-          
-        </Router>{deviceUsed === 'mobile' ? <></> : <Footer />}
+          {deviceUsed === 'mobile' ? <></> : <Footer />}
+        </Router>
+       
         <ThemeBtn />
-        
       </div>
     </>
   );

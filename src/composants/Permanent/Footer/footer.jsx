@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook,  faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -18,8 +19,8 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
             <ul>
-              <li><a href="/FAQ" className="hover:underline">FAQ</a></li>
-              <li><a href="/conditions" className="hover:underline">Conditions Générales et RGPD</a></li>
+            <li><Link to="/FAQ" className="hover:underline">FAQ</Link></li>
+            <li><Link to="/conditions" className="hover:underline">Conditions Générales et RGPD</Link></li>
             </ul>
           </div>
           {/* Troisième partie */}
